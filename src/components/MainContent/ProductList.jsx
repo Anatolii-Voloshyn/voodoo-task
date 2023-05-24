@@ -78,12 +78,10 @@ export const ProductList = ({ products }) => {
       )} 
     
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mt-24">
         <div className="
           flex
-          justify-center
-          mt-24
-          md:mt-12"
+          justify-center"
         >
           <p className="text-sm md:text-xl">
             Be the first one to know when we launch our beta!
