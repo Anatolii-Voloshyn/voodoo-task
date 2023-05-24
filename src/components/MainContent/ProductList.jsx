@@ -14,16 +14,39 @@ export const ProductList = ({ products }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center h-[72px] mt-6 md:mt-[100px] mx-6 md:mx-[120px] bg-black rounded text-[#fcf7e6]">
+      <div className="
+        flex
+        justify-between
+        items-center
+        h-[72px]
+        mt-6
+        md:mt-[100px]
+        mx-6
+        md:mx-[120px]
+        bg-black
+        rounded
+        text-[#fcf7e6]"
+      >
         <div className="flex items-center">
-          <img className="w-5 ml-7" src={require('../../logo2.png')} alt="logo2"/>
-          <div className="uppercase ml-2">Alpha</div>
+          <img 
+            className="w-5 ml-7"
+            src={require('../../logo2.png')}
+            alt="logo2"
+          />
+          <div className="uppercase ml-2">
+            Alpha
+          </div>
+
           {!isSmallScreen && (
-            <div className="text-sm ml-12">Important info regarding our service</div>
+            <div className="text-sm ml-12">
+              Important info regarding our service
+            </div>
           )}
 
           {isSmallScreen && (
-            <div className="text-sm ml-6">Important info</div>
+            <div className="text-sm ml-6">
+              Important info
+            </div>
           )}
          
         </div>
@@ -37,7 +60,14 @@ export const ProductList = ({ products }) => {
 
       {isExpanded && (
         <div className="pt-12 mx-6">
-          <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-12 md:gap-6 md:mx-24">
+          <div className="
+            grid
+            sm:grid-cols-1
+            md:grid-cols-4
+            gap-12
+            md:gap-6
+            md:mx-24"
+          >
             {products.map((product) => 
               <div key={product.id}>
                 <ProductCard product={product} />
@@ -45,14 +75,27 @@ export const ProductList = ({ products }) => {
             )}
           </div>
         </div>
-      )}
+      )} 
     
 
       <div className="flex flex-col">
-        <div className="flex justify-center mt-24 md:mt-12">
-          <p className="text-sm md:text-xl">Be the first one to know when we launch our beta!</p>
+        <div className="
+          flex
+          justify-center
+          mt-24
+          md:mt-12"
+        >
+          <p className="text-sm md:text-xl">
+            Be the first one to know when we launch our beta!
+          </p>
         </div>
-        <div className="flex justify-center mt-6 mb-32 mx-6">
+        <div className="
+          flex
+          justify-center
+          mt-6
+          mb-32
+          mx-6"
+        >
           <EmailSignup />
         </div>
       </div>
